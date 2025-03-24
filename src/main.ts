@@ -17,7 +17,7 @@ const cube = CustomObject(BoxGeometry(), BasicMaterial({ color: 0x00022 }));
 camera.lookAt(cube.position);
 scene.addScene(cube);
 
-CreateAnimation(cube, { x: 0, y: 0, z: 0 }, { x: 2, y: 0, z: 0 });
+CreateAnimation(cube, { x: -5, y: 0, z: 0 }, { x: 10, y: 0, z: 0 }, () => {}, 2);
 
 document.body.appendChild(renderer.domElement);
 
